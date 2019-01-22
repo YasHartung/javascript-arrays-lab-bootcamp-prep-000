@@ -26,10 +26,10 @@ function appendKitten (name) {
   appKittens.push(name)
   return appKittens
 }
-var prepKitten = kittens
+
 
 function prependKitten (name) {
-prepKitten.unshift(name)
-return prepKitten
-
+  var prepKitten = kittens
+  prepKitten.unshift(name)
+  return prepKitten
 }
