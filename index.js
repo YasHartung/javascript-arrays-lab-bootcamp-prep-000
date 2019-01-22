@@ -20,16 +20,17 @@ function destructivelyRemoveFirstKitten () {
   kittens.shift()
   return kittens
 }
-var appKittens = kittens
+
 
 function appendKitten (name) {
-  appKittens.push(name)
-  return appKittens
+  var appKittens = [name]
+
+  return kittens.concat(appKittens)
 }
 
 
 function prependKitten (name) {
-  var prepKitten = kittens
-  prepKitten.unshift(name)
-  return prepKitten
+  var prepKitten = [name]
+  
+  return prepKitten.concat(kittens)
 }
