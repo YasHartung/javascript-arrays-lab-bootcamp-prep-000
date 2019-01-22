@@ -31,5 +31,5 @@ var prepKitten = kittens
 function prependKitten (name) {
 prepKitten.unshift(name)
 return prepKitten
-  
+
 }
